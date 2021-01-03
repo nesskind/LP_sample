@@ -3,18 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>A = SK</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="inner header-inner"></div>
+      <div class="inner header-inner">
+        <div class="header-ask">A = SK</div>
+      </div>
     </header>
     <main class="main">
-      <div class="title">
-        <div class="inner title-inner"></div>
+      <div class="title text-center">
+        <div class="inner title-inner bg-slider">
+          <div class="title-wrapper">
+            <h1 class="title-ask theme-color">A = SK</h1>
+            <p class="title-to-ask theme-color">to ask a question</p>
+          </div>
+        </div>
       </div>
       <section>
         <div class="inner"></div>
@@ -31,5 +38,23 @@
       <div class="inner footer-inner"></div>
     </footer>
   </div>
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script src="js/jquery.bgswitcher.js"></script>
+  <script>
+    $(function() {
+      $('.bg-slider').bgSwitcher({
+        images: ['/Users/kawasoeshota/Documents/LP_sample/img/od86f936c323de5ae2c6e8c212a7ac2ee_4620693218552598574_210103_2.jpg','/Users/kawasoeshota/Documents/LP_sample/img/od86f936c323de5ae2c6e8c212a7ac2ee_4620693218552598574_210103_4.jpg','/Users/kawasoeshota/Documents/LP_sample/img/od86f936c323de5ae2c6e8c212a7ac2ee_4620693218552598574_210103.jpg','/Users/kawasoeshota/Documents/LP_sample/img/20210103_210103.jpg'], // 切替背景画像を指定
+	      interval: 3000, // 背景画像を切り替える間隔を指定 3000=3秒
+        loop: true, // 切り替えを繰り返すか指定 true=繰り返す　false=繰り返さない
+        shuffle: false, // 背景画像の順番をシャッフルするか指定 true=する　false=しない
+        effect: "fade", // エフェクトの種類をfade,blind,clip,slide,drop,hideから指定
+        duration: 1000, // エフェクトの時間を指定します。
+        easing: "swing" // エフェクトのイージングをlinear,swingから指定
+      });
+    });
+  </script>
 </body>
 </html>
