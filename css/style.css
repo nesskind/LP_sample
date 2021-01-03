@@ -44,3 +44,29 @@
   font-size: 30px;
   margin-top: 20px;
 }
+
+.member-inner {
+  padding: 20px 0;
+}
+
+.member-title {
+  font-size: 50px;
+}
+
+
+
+
+
+
+
+
+
+/* -------footer-------- */
+.footer-inner {
+  padding: 7px 0;
+  text-align: end;
+}
+
+.footer-text {
+  color: #f2f2f2;
+}
